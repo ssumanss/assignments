@@ -1,0 +1,89 @@
+\documentclass[9pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{amsmath, amssymb}
+\usepackage{censor}
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\usepackage{tikz}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+\runningheader{\footnotesize Mathematics}
+{\footnotesize Mathematics --- Differential Geometry}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\footnotesize Complex Analysis}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of Assignment}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+
+\renewcommand{\labelenumi}{\roman{enumi}.}
+%==============================================================
+\begin{document}
+%% \thispagestyle{empty}
+\begin{center}
+{\large \bfseries UNIVERSITY DEPARTMENT OF MATHEMATICS \par
+\Large Tilka Manjhi Bhagalpur University, Bhagalpur \\[5pt]
+\small Assignment -- 01  \par}
+%  \vspace{0.5cm}
+\end{center}
+
+\par
+\noindent
+\uline{Due Date: 15--05-19    \hfill \normalsize\emph{PAPER -- VI} \hfill        Session: 2017--19}
+
+
+\begin{questions}
+\pointsinrightmargin
+
+\question
+Parametrization of linear paths with given points
+\begin{parts}
+    \part $0$ to $2+3i$
+    \part $1+i$ to $2-i$
+    \part $-1-i$ to $2+3i$
+    \part $2$ to $2+2i$
+\end{parts}   
+
+\question
+Parametrization of circular paths
+\begin{parts}
+    \part Circle centered at $0$ from $1$ to $i$
+    \part Circle centered at $1+i$ with radius $2$. 
+    \part Circle centered at origin of radius $3$.
+\end{parts}
+
+\question Find the parametrization of the curve $y=x^2$ from $0$ to $1$.
+
+\question 
+Find $\displaystyle \int_\gamma  (x^2-iy^2)dz $ along
+\begin{parts}
+    \part The parabola $y=2x^2$ from $(1,1)$ to $(2,8)$.
+    \part The straight lines from $(1,1)$ to $(1,8)$ and $(1,1)$ to $(2,8)$
+    \part The straight line from $(1,1)$ to $(2,8)$
+\end{parts}
+\question
+Find $\displaystyle \int_\gamma \mid z \mid^2 dz$ along the square with vertices at $(0,0), (1,0), (1,1),(0,1)$.
+
+\end{questions}
+\begin{center}
+\rule{.5\textwidth}{1pt}
+\end{center}
+\end{document}
